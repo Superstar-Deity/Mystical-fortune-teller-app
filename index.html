@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main> 
+        <h1>UNVEIL YOUR DESTINY</h1>
+        <p>Every name carries a story. Every sign holds a mystery. Enter yours and discover what the stars reveal.</p>
+            <form id="fortune-form">
+                <!-- name field -->
+                 <div class="name-field">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                
+
+                <!-- zodiac dropdown -->
+                <div class="container">
+                    <label for="zodiac">Zodiac:</label>
+                    <select name="zodiac" id="zodiac">
+                        <option value="">Select your zodiac sign</option>
+                        <option value="aries">Aries</option>
+                        <option value="taurus">Taurus</option>
+                        <option value="gemini">Gemini</option>
+                        <option value="cancer">Cancer</option>
+                        <option value="leo">Leo</option>
+                        <option value="virgo">Virgo</option>
+                        <option value="libra">Libra</option>
+                        <option value="scorpio">Scorpio</option>
+                        <option value="sagittarius">Sagittarius</option>
+                        <option value="capricorn">Capricorn</option>
+                        <option value="aquarius">Aquarius</option>
+                        <option value="pisces">Pisces</option>
+                    </select>
+
+                <!-- submit button -->
+                    <button type="submit">Reveal My Fate</button>
+                </div>
+            </form>
+
+             <div class="destiny-zone" id="destiny-zone">
+                    <!-- results will be printed here -->
+            </div>
+
+            <section class="archive">
+                <h2>Explore the Cosmos</h2>
+
+                <input type="text" id="search-input" placeholder="Search the fortunes">
+
+                <button id="search-button">Search</button>
+                <button id="sort-button">Sort Alphabetically</button>
+
+                <div id="archive-results"></div>
+            </section>
+    </main>
+    
+    <script src="index.js"></script>
+</body>
+</html>

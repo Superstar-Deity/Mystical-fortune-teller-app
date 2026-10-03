@@ -1,0 +1,272 @@
+/* universal styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Page background and typography */
+body {
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    background:
+        radial-gradient(circle at top, #2a0a45 0%, transparent 45%),
+        linear-gradient(135deg, #05000a, #160923);
+    color: #e9d5ff;
+    font-family: "Cormorant Garamond", serif;
+}
+
+/* main layout */
+main {
+    width: 100%;
+    max-width: 1000px;
+    margin: 4rem auto 0;
+    text-align: center;
+}
+
+/* main heading */
+h1 {
+    font-family: "Cinzel", serif;
+    font-weight: 800;
+    font-size: 72px;
+    color: #e9d5ff;
+    text-shadow: 0 0 15px #7e22ce;
+}
+
+/* introduction paragraph */
+p {
+    font-size: 1.5rem;
+    text-shadow: 0 0 10px #7e22ce;
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+/* form layout */
+form {
+    width: 100%;
+    max-width: 520px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    align-items: center;
+
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 1rem 0.5rem;
+
+    background: rgba(25, 12, 40, 0.85);
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(126, 34, 206, 0.2);
+}
+
+/* name label */
+label {
+    font-size: 1.2rem;
+}
+
+/* name input */
+input {
+    width: auto;
+    padding: 0.85rem 1rem;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #10091a;
+    color: #e9d5ff;
+    border: 1px solid #68458a;
+    font: inherit;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input::placeholder {
+    color: #e9d5ff;
+}
+
+.name-field {
+    display: contents;
+}
+
+.name-field label {
+    grid-column: 1;
+}
+
+.name-field input {
+    grid-column: 2 / 4;
+}
+
+
+/* dropdown and button container */
+.container {
+    display: contents;
+}
+
+.container label {
+    grid-column: 1;
+}
+
+.container select {
+    grid-column: 2;
+}
+
+.container button {
+    grid-column: 3;
+}
+
+select {
+    width: auto;
+    padding: 0.85rem 1rem;
+    border-radius: 8px;
+    background-color: #10091a;
+    color: #e9d5ff;
+    border: 1px solid #68458a;
+    font: inherit;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:focus,
+input:focus {
+    border-color: #d4af37;
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.3);
+}
+
+/* discover button */
+button {
+    background-color: #d4af37;
+    color: #10091a;
+    border: none;
+    padding: 0.85rem 1rem;
+    border-radius: 8px;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+        background-color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #e5c45a;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.5);
+    transform: translateY(-2px);
+}
+
+/* destiny zone */
+.destiny-zone {
+    padding: 2rem;
+    box-sizing: border-box;
+    min-height: 120px;
+    background-color: rgba(25, 12, 40, 0.85);
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(126, 34, 206, 0.2);
+
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+/* tarot cards */
+.tarot-card {
+    display: inline-block;
+    vertical-align: top;
+    width: min(100%, 220px);
+    min-height: 180px;
+    margin: 1rem 0.5rem 0;
+    padding: 1.5rem 1rem;
+    box-sizing: border-box;
+
+    background: linear-gradient(145deg, #241034, #10091a);
+    border: 1px solid #d4af37;
+    border-radius: 12px;
+    box-shadow: 0 0 18px rgba(139, 92, 246, 0.2);
+}
+
+.tarot-card h3 {
+    margin-bottom: 1rem;
+    color: #f3d979;
+    font-family: "Cinzel", serif;
+}
+
+.tarot-card p {
+    font-size: 1.15rem;
+    line-height: 1.5;
+}
+
+/* archive */
+.archive {
+    max-width: 800px;
+    margin: 3rem auto 0;
+    padding: 2rem;
+    box-sizing: border-box;
+
+    background: rgba(25, 12, 40, 0.85);
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    border-radius: 16px;
+}
+
+.archive h2 {
+    margin-bottom: 1.25rem;
+    color: #f3d979;
+    font-family: "Cinzel", serif;
+}
+
+#search-input {
+    width: min(100%, 400px);
+    margin: 0.5rem;
+}
+
+#archive-results {
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+#archive-results p {
+    margin: 0.5rem 0;
+    padding: 0.85rem 1rem;
+    background: rgba(255, 255, 255, 0.04);
+    border-left: 3px solid #d4af37;
+    border-radius: 4px;
+    font-size: 1.1rem;
+}
+
+.archive button {
+    margin: 0.35rem;
+}
+
+/* mobile adjustments */
+@media (max-width: 600px) {
+    main {
+        margin-top: 2rem;
+    }
+
+    h1 {
+        font-size: clamp(2.2rem, 11vw, 3.5rem);
+    }
+
+    form {
+        grid-template-columns: 1fr;
+        padding: 1.2rem;
+    }
+
+    .name-field label,
+    .name-field input,
+    .container label,
+    .container select,
+    .container button {
+        grid-column: auto;
+    }
+
+    .tarot-card {
+        display: block;
+        width: 100%;
+        margin: 1rem 0 0;
+    }
+
+    .destiny-zone,
+    .archive {
+        padding: 1.25rem;
+    }
+}
