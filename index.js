@@ -11,6 +11,7 @@ const fortunes = [
     "A great financial wind blows your way",
     "Your health will improve significantly",
     "You will achieve your dreams if you stay focused",
+    "Tinubu go kill you"
 ];
 
 const pastReadings = [];
